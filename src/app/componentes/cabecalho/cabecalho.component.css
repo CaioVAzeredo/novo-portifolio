@@ -1,0 +1,10 @@
+.nome-completo {
+    font-family: var(--fonte-terciaria);
+    
+}
+.nome{
+    font-weight: 800;
+}
+.sobre-nome{
+    font-weight: 400;
+}

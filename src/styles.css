@@ -1,0 +1,38 @@
+:root {
+  --cor-fundo: #221f1f;
+  --cor-titulo: #a6bbcc;
+  --cor-texto: #ffff;
+
+  --fonte-principal: 'Poppins', sans-serif;
+  --fonte-secundaria: 'Space Grotesk', sans-serif;
+  --fonte-terciaria: 'Inter', sans-serif;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--cor-titulo);
+}
+
+hr {
+  background-color: var(--cor-titulo);
+  border: none;
+  border-radius: 2px;
+  height: 1px;
+  width: 98%;
+}
