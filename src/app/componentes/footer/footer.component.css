@@ -1,0 +1,31 @@
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 51px;
+    padding: 51px;
+}
+
+.nome-completo {
+    font-family: var(--fonte-terciaria);
+
+}
+
+.nome {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.sobre-nome {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+img {
+    width: 68px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
