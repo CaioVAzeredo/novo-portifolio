@@ -1,10 +1,71 @@
+.container-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 51px;
+}
+
 .nome-completo {
     font-family: var(--fonte-terciaria);
-    
+
 }
-.nome{
+
+.nome {
     font-weight: 800;
+    font-size: 32px;
 }
-.sobre-nome{
+
+.sobre-nome {
     font-weight: 400;
+    font-size: 32px;
+}
+
+nav {
+    width: 400px;
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home,
+.sobre,
+.trabalho {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+/* Linha invisível inicialmente, com escala horizontal zero */
+.home::after,
+.sobre::after,
+.trabalho::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--cor-titulo);
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+/* Ao passar o mouse, a barra cresce para os lados */
+.home:hover::after,
+.sobre:hover::after,
+.trabalho:hover::after {
+    transform: scaleX(1);
+}
+
+img {
+    width: 68px;
+    height: 63px;
+    margin-top: -9px;
+}
+
+img:hover {
+    cursor: pointer;
 }
