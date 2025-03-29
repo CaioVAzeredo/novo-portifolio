@@ -1,5 +1,41 @@
 .container-hero {
-    height: 231px;
-    width: 1900px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+
+.info {
+    margin-top: 100px;
+    width: 500px;
+    line-height: 1.0;
+}
+
+p {
+    font-size: 28px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.contato {
+    font-weight: 600;
+    line-height: 3;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.contato:hover {
+    color: var(--cor-titulo);
+}
+
+.foto {
+    width: 484px;
+    height: 484px;
+    background-color: var(--cor-titulo);
+    border-radius: 500px;
 }

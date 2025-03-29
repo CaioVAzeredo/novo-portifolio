@@ -51,6 +51,7 @@ nav {
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.4s ease;
+    
 }
 
 /* Ao passar o mouse, a barra cresce para os lados */
@@ -58,6 +59,7 @@ nav {
 .sobre:hover::after,
 .trabalho:hover::after {
     transform: scaleX(1);
+    color: var(--cor-titulo);
 }
 
 img {
