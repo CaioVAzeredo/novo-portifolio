@@ -1,0 +1,35 @@
+.container-sobre{
+    width: 80%;
+    margin: 0 auto;
+}
+.titulo-sobre{
+    display: flex;
+}
+.titulo-sobre h2{
+    font-size: 75px;
+    }
+.titulo-sobre hr{
+height: 4px;
+width: 80%;
+margin: 65px auto;
+}
+
+.texto-sobre{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 24px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.skills div h3{
+    font-size: 48px;
+}
+.skills div p{
+    font-size: 18px;
+}
