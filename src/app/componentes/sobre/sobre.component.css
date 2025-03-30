@@ -29,7 +29,13 @@ margin: 65px auto;
 }
 .skills div h3{
     font-size: 48px;
+    margin: 0 auto;
+    font-family: var(--fonte-secundaria);
+    color: white;
+    text-align: center;
 }
 .skills div p{
     font-size: 18px;
+    border-bottom: 1px #a6bbcc solid;
+    text-align: center;
 }

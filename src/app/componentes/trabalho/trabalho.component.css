@@ -1,0 +1,61 @@
+.container-trabalho{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.titulo-trabalho{
+    display: flex;
+}
+.titulo-trabalho h2{
+    font-size: 75px;
+    }
+.titulo-trabalho hr{
+height: 4px;
+width: 73%;
+margin: 65px auto;
+}
+
+.texto-sobre-trabalho{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 24px;
+}
+.div-trabalho{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.trabalhos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.trabalhos a {
+    width: 614px;
+    height: 342px;
+    background-color: var(--cor-titulo);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.trabalhos a:hover {
+    cursor: pointer;
+    transform: scale(1.025); /* aumenta sem afetar o layout */
+}
+.info-trabalho{
+    margin-top: 50px;
+    width: 350px;
+}
+.titulo-descricao{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    color: white;
+}
+.skills-projeto p{
+    font-size: 18px;
+    font-family: var(--fonte-secundaria);
+}
+.skills-projeto{
+    display: flex;
+    justify-content: space-between;
+}

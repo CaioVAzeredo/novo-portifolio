@@ -24,14 +24,38 @@ h1 {
 .contato {
     font-weight: 600;
     line-height: 3;
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: none;
     color: white;
 }
-
-.contato:hover {
-    color: var(--cor-titulo);
-}
+.div-contato {
+    position: relative;
+    display: inline-block; /* Garante que o width se ajuste ao conteúdo */
+  }
+  
+  .div-contato {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .div-contato::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+  bottom: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--cor-titulo);
+  
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+  }
+  
+  .div-contato:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+  
 
 .foto {
     width: 484px;

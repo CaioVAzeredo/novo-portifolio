@@ -1,3 +1,27 @@
+.container-contato{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.titulo-contato{
+  display: flex;
+}
+.titulo-contato h2{
+  font-size: 75px;
+  }
+.titulo-contato hr{
+height: 4px;
+width: 75%;
+margin: 65px auto;
+}
+
+.texto-sobre-contato{
+  margin: 0 auto;
+  width: 80%;
+  font-size: 24px;
+  padding-bottom: 100px;
+}
+
 .form-contato {
     max-width: 600px;
     margin: 0 auto;
