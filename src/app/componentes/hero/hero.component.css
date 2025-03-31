@@ -60,6 +60,5 @@ h1 {
 .foto {
     width: 484px;
     height: 484px;
-    background-color: var(--cor-titulo);
     border-radius: 500px;
 }

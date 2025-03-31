@@ -29,3 +29,10 @@ img {
     justify-content: space-between;
     width: 250px;
 }
+
+@media screen and (min-width: 1024px) {
+    .container-footer {
+        margin: 0 auto;
+        width: 1800px;
+    }
+}
