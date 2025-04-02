@@ -1,64 +1,85 @@
 .container-hero {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding-bottom: 200px;
-    padding-top: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-bottom: 200px;
+  padding-top: 100px;
 }
 
 .info {
-    margin-top: 100px;
-    width: 500px;
-    line-height: 1.0;
+  margin-top: 100px;
+  width: 500px;
+  line-height: 1.0;
 }
 
 p {
-    font-size: 28px;
+  font-size: 28px;
 }
 
 h1 {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 .contato {
-    font-weight: 600;
-    line-height: 3;
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
+  font-weight: 600;
+  line-height: 3;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
 }
+
 .div-contato {
-    position: relative;
-    display: inline-block; /* Garante que o width se ajuste ao conteúdo */
-  }
-  
-  .div-contato {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .div-contato::after {
-    content: "";
-    position: absolute;
-    left: 50%;
+  position: relative;
+  display: inline-block;
+  /* Garante que o width se ajuste ao conteúdo */
+}
+
+.div-contato {
+  position: relative;
+  display: inline-block;
+}
+
+.div-contato::after {
+  content: "";
+  position: absolute;
+  left: 50%;
   bottom: 10px;
-    width: 100%;
-    height: 2px;
-    background-color: var(--cor-titulo);
-  
-    transform: translateX(-50%) scaleX(0);
-    transform-origin: center;
-    transition: transform 0.4s ease;
-  }
-  
-  .div-contato:hover::after {
-    transform: translateX(-50%) scaleX(1);
-  }
-  
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor-titulo);
+
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s ease;
+}
+
+.div-contato:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
 
 .foto {
-    width: 484px;
-    height: 484px;
-    border-radius: 500px;
+  width: 484px;
+  height: 484px;
+  border-radius: 500px;
+}
+
+@media (max-width: 768px) {
+
+  .foto {
+    display: none;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .contato {
+    font-size: 15px;
+  }
 }

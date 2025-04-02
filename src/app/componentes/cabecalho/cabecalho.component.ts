@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './cabecalho.component.css'
 })
 export class CabecalhoComponent {
-  
+  menuAberto = false;
+
+  statusMenu() {
+    this.menuAberto = !this.menuAberto;
+  }
 }

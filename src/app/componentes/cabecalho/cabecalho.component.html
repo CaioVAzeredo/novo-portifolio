@@ -1,11 +1,22 @@
 <header class="container-cabecalho">
-    <h1 class="nome-completo"><strong class="nome">Caio</strong><span class="sobre-nome">azeredo</span></h1>
-    <menu class="itens">
-        <ul>
-            <li><a href="#home" class="home">Home</a></li>
-            <li><a href="#sobre" class="sobre">Sobre</a> </li>
-            <li><a href="#trabalho" class="trabalho">Trabalho</a></li>
-        </ul>
-    </menu>
-    <a href="https://github.com/CaioVAzeredo"><img src="../../../assets/github.png" alt="github"></a>
-</header>
+    <h1 class="nome-completo">
+      <strong class="nome">Caio</strong><span class="sobre-nome">azeredo</span>
+    </h1>
+  
+    <!-- Ícone hamburguer -->
+    <div class="material-icons" (click)="statusMenu()">
+      menu
+    </div>
+  
+    <!-- Menu -->
+    <ul class="itens" [class.show]="menuAberto">
+      <li><a href="#home" class="home">Home</a></li>
+      <li><a href="#sobre" class="sobre">Sobre</a></li>
+      <li><a href="#trabalho" class="trabalho">Trabalho</a></li>
+    </ul>
+  
+    <a href="https://github.com/CaioVAzeredo">
+      <img src="../../../assets/github.png" alt="github" width="32" />
+    </a>
+  </header>
+  

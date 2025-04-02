@@ -1,41 +1,77 @@
-.container-sobre{
+.container-sobre {
     width: 80%;
     margin: 0 auto;
 }
-.titulo-sobre{
+
+.titulo-sobre {
     display: flex;
 }
-.titulo-sobre h2{
+
+.titulo-sobre h2 {
     font-size: 75px;
-    }
-.titulo-sobre hr{
-height: 4px;
-width: 80%;
-margin: 65px auto;
 }
 
-.texto-sobre{
+.titulo-sobre hr {
+    height: 4px;
+    width: 80%;
+    margin: 65px auto;
+}
+
+.texto-sobre {
     margin: 0 auto;
     width: 80%;
     font-size: 24px;
 }
 
-.skills{
+.skills {
     display: flex;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
     padding-top: 50px;
 }
-.skills div h3{
+
+.skills div h3 {
     font-size: 48px;
     margin: 0 auto;
     font-family: var(--fonte-secundaria);
     color: white;
     text-align: center;
 }
-.skills div p{
+
+.skills div p {
     font-size: 18px;
     border-bottom: 1px #a6bbcc solid;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .titulo-sobre h2 {
+        font-size: 40px;
+    }
+    .titulo-sobre hr {
+        height: 4px;
+        width: 75%;
+        margin: 25px auto;
+    }
+    .texto-sobre{
+        font-size: 25px;
+    }
+    .skills{
+        display: block;
+    }
+
+    .skills div h3 {
+        font-size: 48px;
+        margin: 0 auto;
+        font-family: var(--fonte-secundaria);
+        color: white;
+        text-align: center;
+    }
+    
+    .skills div p {
+        font-size: 20px;
+        border-bottom: 1px #a6bbcc solid;
+        text-align: center;
+    }
 }
