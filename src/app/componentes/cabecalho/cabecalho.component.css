@@ -104,33 +104,64 @@ img:hover {
   }
   
   @media (max-width: 768px) {
+      .nome-completo{
+          width: 70px;
+      }
+    .nome {
+        font-weight: 800;
+        font-size: 18px;
+    }
+    .sobre-nome {
+        font-weight: 400;
+        font-size: 18px;
+    }
     .material-icons {
       display: block;
       width: 50px;
-      font-size: 40px;
+      font-size: 28px;
     }
-  
+    
     .itens {
-      display: none;
-      flex-direction: column;
-      background-color: var(--fonte-terciaria);
-      position: absolute;
-      top: 60px;
-      left: 70px;
-      padding: 10px;
-      width: 95vw;
-    }
-    .itens li{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--fonte-terciaria);
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        padding-top: 10px;
+        width: 100vw;
+        background-color: var(--cor-titulo);
+        
+        /* Adicionando animação */
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .itens li {
+        width: 100vw;
+        margin: 0;
+        padding-bottom: 5px;
         text-align: center;
     }
-  
-    .itens.show {
-      display: flex;
-    }
+    
+    .itens li a {
+          font-size: 18px;
+        border-bottom: #221f1f;
+        color: #221f1f;
+      }
+      
+      .itens.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+      
     img {
         width: 48px;
         height: 45px;
-        margin-top: -9px;
+        margin-top: -5px;
     }
   }
   

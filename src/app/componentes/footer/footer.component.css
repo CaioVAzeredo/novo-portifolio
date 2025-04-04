@@ -36,3 +36,28 @@ img {
         width: 1800px;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .container-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    } 
+    .nome-completo{
+        width: 200px;
+    }
+.nome {
+    font-weight: 800;
+    font-size: 20px;
+}
+.sobre-nome {
+    font-weight: 400;
+    font-size: 20px;
+}
+div img{
+    width: 48px;
+        height: 45px;
+}
+}
