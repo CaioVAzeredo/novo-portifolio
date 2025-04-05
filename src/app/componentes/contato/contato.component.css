@@ -13,6 +13,7 @@
 height: 4px;
 width: 75%;
 margin: 65px auto;
+margin-top: 50px;
 }
 
 .texto-sobre-contato{
@@ -87,3 +88,23 @@ margin: 65px auto;
     width: 100%;
   }
   
+
+  @media (max-width: 768px) {
+    .titulo-contato h2 {
+        font-size: 25px;
+    }
+    .titulo-contato hr {
+        height: 2px;
+        width: 75%;
+        margin: 25px auto;
+        margin-top: 15px;
+    }
+    .texto-sobre-contato{
+        font-size: 15px;
+    }
+    .botaoEnviarMensagem{
+      margin-bottom: 30px;
+      font-size: 13px;
+    }
+   
+}

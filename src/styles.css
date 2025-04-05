@@ -22,6 +22,12 @@ body {
   color: var(--cor-texto);
   line-height: 1.6;
 }
+@media screen and (min-width: 1820px) {
+  body{
+      margin: 0 auto;
+      width: 1800px;
+  }
+}
 
 h1,
 h2,
