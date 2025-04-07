@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { bootstrapApplication } from '@angular/platform-browser';
 
 interface CarouselItem {
   id: number;
@@ -8,15 +7,15 @@ interface CarouselItem {
   color: string;
 }
 
-
 @Component({
   selector: 'app-carousel',
   standalone: true,
   imports: [CommonModule],
+  styleUrls: ['./carousel.component.css'],
   template: `
     <div class="carousel-container">
       <button class="carousel-button prev" (click)="prevSlide()">←</button>
-      
+
       <div *ngFor="let item of items; let i = index"
            class="carousel-item"
            [class.active]="i === currentIndex"
@@ -25,7 +24,7 @@ interface CarouselItem {
            [style.background]="item.color">
         <h2>{{ item.title }}</h2>
       </div>
-      
+
       <button class="carousel-button next" (click)="nextSlide()">→</button>
     </div>
   `
@@ -82,20 +81,3 @@ export class CarouselComponent implements OnInit, OnDestroy {
     this.startAutoPlay();
   }
 }
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CarouselComponent],
-  template: `
-    <div style="padding: 20px;">
-      <h1>Angular Carousel Demo</h1>
-      <app-carousel></app-carousel>
-    </div>
-  `
-})
-export class App {
-  name = 'Angular';
-}
-
-bootstrapApplication(App);
