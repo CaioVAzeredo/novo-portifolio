@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>My app</title>
-    <meta charset="UTF-8" />
-    <base href="/">
-  </head>
-  <body>
-    <app-root>Loading...</app-root>
-  </body>
-</html>
+<div class="carousel">
+  <button class="nav-button" (click)="prevSlide()">&#10094;</button>
+
+  <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex"
+    [style.background]="slide.color">
+    <h2>{{ slide.title }}</h2>
+  </div>
+  <button class="nav-button" (click)="nextSlide()">&#10095;</button>
+</div>
