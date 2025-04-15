@@ -5,7 +5,6 @@ import { TrabalhoComponent } from "./componentes/trabalho/trabalho.component";
 import { SobreComponent } from "./componentes/sobre/sobre.component";
 import { ContatoComponent } from "./componentes/contato/contato.component";
 import { FooterComponent } from "./componentes/footer/footer.component";
-import { CarouselComponent } from "./componentes/carousel/carousel.component";
 
 
 @Component({
@@ -16,7 +15,7 @@ import { CarouselComponent } from "./componentes/carousel/carousel.component";
     SobreComponent,
     ContatoComponent,
     FooterComponent,
-    CarouselComponent
+    TrabalhoComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

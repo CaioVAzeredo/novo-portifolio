@@ -1,36 +1,49 @@
-.container-trabalho{
+.container-trabalho {
     width: 80%;
     margin: 0 auto;
     padding-top: 150px;
 }
-.titulo-trabalho{
+
+.titulo-trabalho {
     display: flex;
 }
-.titulo-trabalho h2{
+
+.titulo-trabalho h2 {
     font-size: 75px;
-    }
-.titulo-trabalho hr{
-height: 4px;
-width: 73%;
-margin: 65px auto;
-margin-top: 50px;
 }
 
-.texto-sobre-trabalho{
+.titulo-trabalho hr {
+    height: 4px;
+    width: 73%;
+    margin: 65px auto;
+    margin-top: 50px;
+}
+
+.texto-sobre-trabalho {
     margin: 0 auto;
     width: 80%;
     font-size: 24px;
 }
-.div-trabalho{
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
+
+.div-trabalho {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* aqui está o que você quer */
+    gap: 40px;
+    justify-items: center;
+    padding: 50px 0;
 }
-.trabalhos{
+
+
+.trabalhos {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    margin-left: -50px;
 }
+
 .trabalhos a {
     width: 614px;
     height: 342px;
@@ -39,56 +52,76 @@ margin-top: 50px;
     transition: transform 0.3s ease;
 }
 
+img {
+    width: 640px;
+    height: 342px;
+    border-radius: 10px;
+}
+
 .trabalhos a:hover {
     cursor: pointer;
-    transform: scale(1.025); /* aumenta sem afetar o layout */
+    transform: scale(1.025);
+    /* aumenta sem afetar o layout */
 }
-.info-trabalho{
+
+.info-trabalho {
     margin-top: 50px;
     width: 350px;
 }
-.titulo-descricao{
+
+.titulo-descricao {
     font-size: 24px;
     font-family: var(--fonte-secundaria);
     color: white;
 }
-.skills-projeto p{
+
+.skills-projeto p {
     font-size: 18px;
     font-family: var(--fonte-secundaria);
 }
-.skills-projeto{
+
+.skills-projeto {
     display: flex;
     justify-content: space-between;
 }
-  
-  .div-trabalho {
-    display: flex;
-    gap: 40px;
-    width: max-content;
-    padding-bottom: 20px;
-  }
-  
-  .div-trabalho > div {
+
+
+
+.div-trabalho>div {
     flex: 0 0 auto;
-  }
-  
+}
+
 @media (max-width: 768px) {
+    .div-trabalho {
+        grid-template-columns: 1fr;
+    }
+
     .titulo-trabalho h2 {
         font-size: 25px;
     }
+
     .titulo-trabalho hr {
         height: 2px;
         width: 75%;
         margin: 25px auto;
         margin-top: 15px;
     }
-    .texto-sobre-trabalho{
+
+    .texto-sobre-trabalho {
         font-size: 15px;
     }
-    .titulo-descricao{
+
+    .titulo-descricao {
         font-size: 21px;
     }
-    .skills-projeto{
+
+    .skills-projeto {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .div-trabalho {
+        grid-template-columns: 1fr;
     }
 }
