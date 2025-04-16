@@ -1,0 +1,34 @@
+{
+    "trabalho": [
+        {
+            "titulo": "SITE CASAMENTO",
+            "imagem": "../../../assets/casamento-mn.png",
+            "link": "",
+            "skills": [
+                "JAVASCRIPT/REACT",
+                "C#/.NET",
+                "MySQL"
+            ]
+        },
+        {
+            "titulo": "SITE CASAMENTO",
+            "imagem": "../../../assets/camp-xadrez.png",
+            "link": "",
+            "skills": [
+                "JAVASCRIPT/REACT",
+                "C#/.NET",
+                "MySQL"
+            ]
+        },
+        {
+            "titulo": "SITE CASAMENTO",
+            "imagem": "../../../assets/portifolio-projeto.png",
+            "link": "",
+            "skills": [
+                "JAVASCRIPT/REACT",
+                "C#/.NET",
+                "MySQL"
+            ]
+        }
+    ]
+}

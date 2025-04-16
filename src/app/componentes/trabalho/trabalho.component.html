@@ -8,6 +8,38 @@
         do usuário, performance e escalabilidade.
     </p>
     <div class="div-trabalho">
+        @for(trabalho of trabalhos; track trabalho?.titulo){
+        <div>
+            <div class="trabalho">
+                <a [href]="trabalho.link">
+                    <img [src]="trabalho.imagem" [alt]="trabalho.titulo">
+                </a>
+            </div>
+            <div class="info-trabalho">
+                <h3 class="titulo-descricao">{{trabalho.titulo}}</h3>
+                <div class="skills-projeto">
+                    @for(skill of trabalho.skills; track skill){
+                    <p>{{skill}}</p>
+                    }
+                </div>
+            </div>
+        </div>
+        }
+        <!--  
+        <div>
+            <div class="trabalhos">
+                <a href=""><img src="../../../assets/casamento-mn.png" alt=""></a>
+            </div>
+            <div class="info-trabalho">
+                <h3 class="titulo-descricao">SITE CASAMENTO </h3>
+                <div class="skills-projeto">
+                    <p>JAVASCRIPT/REACT</p>
+                    <p>C#/.NET</p>
+                    <p>MySQL</p>
+                </div>
+            </div>
+        </div>
+               
         <div>
             <div class="trabalhos">
                 <a href=""><img src="../../../assets/casamento-mn.png" alt=""></a>
@@ -46,7 +78,8 @@
                     <p>MySQL</p>
                 </div>
             </div>
-        </div>
+        </div> 
+        -->
     </div>
 
 
