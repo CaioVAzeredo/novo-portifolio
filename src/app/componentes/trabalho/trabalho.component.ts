@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-trabalho',
   standalone: true,
@@ -15,10 +16,9 @@ export class TrabalhoComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any>('/assets/trabalhos.json')
+    this.http.get<any>('assets/trabalhos.json')
       .subscribe(data => {
         this.trabalhos = data.trabalhos;
-        console.log(this.trabalhos);
       });
   }
 }

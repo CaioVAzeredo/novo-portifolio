@@ -1,5 +1,5 @@
 {
-    "trabalho": [
+    "trabalhos": [
         {
             "titulo": "SITE CASAMENTO",
             "imagem": "../../../assets/casamento-mn.png",
@@ -11,12 +11,12 @@
             ]
         },
         {
-            "titulo": "SITE CASAMENTO",
+            "titulo": "SITE CAMPEONATO DE XADREZ",
             "imagem": "../../../assets/camp-xadrez.png",
             "link": "",
             "skills": [
                 "JAVASCRIPT/REACT",
-                "C#/.NET",
+                "JAVA",
                 "MySQL"
             ]
         },
