@@ -3,7 +3,7 @@
         {
             "titulo": "SITE CASAMENTO",
             "imagem": "../../../assets/casamento-mn.png",
-            "link": "",
+            "link": "https://casamento-mn.vercel.app/",
             "skills": [
                 "JAVASCRIPT/REACT",
                 "C#/.NET",
@@ -13,7 +13,7 @@
         {
             "titulo": "SITE CAMPEONATO DE XADREZ",
             "imagem": "../../../assets/camp-xadrez.png",
-            "link": "",
+            "link": "https://camp-xadrez.vercel.app/",
             "skills": [
                 "JAVASCRIPT/REACT",
                 "JAVA",
@@ -21,13 +21,11 @@
             ]
         },
         {
-            "titulo": "SITE CASAMENTO",
-            "imagem": "../../../assets/portifolio-projeto.png",
+            "titulo": "APP CARTAS DE CAFÉ",
+            "imagem": "../../../assets/cartas-de-cafe.png",
             "link": "",
             "skills": [
-                "JAVASCRIPT/REACT",
-                "C#/.NET",
-                "MySQL"
+                "DART/FLUTTER"
             ]
         }
     ]

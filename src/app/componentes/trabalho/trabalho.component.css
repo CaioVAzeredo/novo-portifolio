@@ -53,7 +53,6 @@
 
 img {
     width: 640px;
-    height: 342px;
     border-radius: 10px;
 }
 
@@ -93,7 +92,18 @@ img {
 @media (max-width: 768px) {
     .div-trabalho {
         grid-template-columns: 1fr;
+        margin: 0 auto;
     }
+
+    .div-trabalho div {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
 
     .titulo-trabalho h2 {
         font-size: 25px;
@@ -116,6 +126,18 @@ img {
 
     .skills-projeto {
         font-size: 14px;
+    }
+
+    .titulo-descricao {
+        font-size: 20px;
+    }
+
+    .skills-projeto {
+        width: 80%;
+    }
+
+    .skills-projeto p {
+        font-size: 15px;
     }
 }
 
