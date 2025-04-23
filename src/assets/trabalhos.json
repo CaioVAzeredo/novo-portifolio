@@ -1,6 +1,16 @@
 {
     "trabalhos": [
         {
+            "titulo": "SITE SOZINHO NO SÓTÃO",
+            "imagem": "../../../assets/cartas-de-cafe.png",
+            "link": "",
+            "skills": [
+                "JAVASCRIPT",
+                "HTML",
+                "CSS"
+            ]
+        },
+        {
             "titulo": "SITE CASAMENTO",
             "imagem": "../../../assets/casamento-mn.png",
             "link": "https://casamento-mn.vercel.app/",
