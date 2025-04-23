@@ -3,7 +3,7 @@
         {
             "titulo": "SITE SOZINHO NO SÓTÃO",
             "imagem": "../../../assets/sozinho-no-sotao.png",
-            "link": "",
+            "link": "https://sozinhonosotao.vercel.app/",
             "skills": [
                 "JAVASCRIPT",
                 "HTML",
