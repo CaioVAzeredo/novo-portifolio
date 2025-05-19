@@ -1,6 +1,15 @@
 {
     "trabalhos": [
         {
+            "titulo": "SITE TOP 7",
+            "imagem": "../../../assets/site-top7.png",
+            "link": "",
+            "skills": [
+                "ANGULAR",
+                "JAVA/SPRING BOOT"
+            ]
+        },
+        {
             "titulo": "SITE SOZINHO NO SÓTÃO",
             "imagem": "../../../assets/sozinho-no-sotao.png",
             "link": "https://sozinhonosotao.vercel.app/",
@@ -26,7 +35,7 @@
             "link": "https://camp-xadrez.vercel.app/",
             "skills": [
                 "JAVASCRIPT/REACT",
-                "JAVA",
+                "JAVA/SPRING BOOT",
                 "MySQL"
             ]
         },
