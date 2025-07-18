@@ -3,7 +3,7 @@
         {
             "titulo": "SITE TOP 7",
             "imagem": "../../../assets/site-top7.png",
-            "link": "https://top7esportes.vercel.app/",
+            "link": "https://top7esportes.com/",
             "skills": [
                 "ANGULAR",
                 "JAVA/SPRING BOOT"
