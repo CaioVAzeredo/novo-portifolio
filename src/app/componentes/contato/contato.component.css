@@ -1,22 +1,25 @@
-.container-contato{
+.container-contato {
   width: 80%;
   margin: 0 auto;
   padding-top: 150px;
 }
-.titulo-contato{
+
+.titulo-contato {
   display: flex;
 }
-.titulo-contato h2{
+
+.titulo-contato h2 {
   font-size: 75px;
-  }
-.titulo-contato hr{
-height: 4px;
-width: 75%;
-margin: 65px auto;
-margin-top: 50px;
 }
 
-.texto-sobre-contato{
+.titulo-contato hr {
+  height: 4px;
+  width: 75%;
+  margin: 65px auto;
+  margin-top: 50px;
+}
+
+.texto-sobre-contato {
   margin: 0 auto;
   width: 80%;
   font-size: 24px;
@@ -24,87 +27,90 @@ margin-top: 50px;
 }
 
 .form-contato {
-    max-width: 600px;
-    margin: 0 auto;
-    color: var(--cor-texto);
-    font-family: var(--fonte-principal);
-  }
-  
-  .form-group {
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  
-  label {
-    display: block;
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
-    color: var(--cor-texto);
-    letter-spacing: 1px;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 0.5rem 0;
-    border: none;
-    border-bottom: 2px solid #fff;
-    background-color: transparent;
-    color: var(--cor-texto);
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-  
-  input:focus,
-  textarea:focus {
-    border-bottom: 2px solid #a6bbcc;
-  }
-  
-  button {
-    display: block;
-    margin: 2rem auto 0;
-    background: none;
-    border: none;
-    color: var(--cor-texto);
-    font-weight: bold;
-    letter-spacing: 2px;
-    cursor: pointer;
-    position: relative;
-    padding: 0.5rem 1rem;
-  }
-  
-  button::after {
-    content: "";
-    display: block;
-    height: 2px;
-    background-color: #a6bbcc;
-    width: 60%;
-    margin: 0.5rem auto 0;
-    transition: width 0.3s;
-  }
-  
-  button:hover::after {
-    width: 100%;
-  }
-  
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal);
+}
 
-  @media (max-width: 768px) {
-    .titulo-contato h2 {
-        font-size: 25px;
-    }
-    .titulo-contato hr {
-        height: 2px;
-        width: 75%;
-        margin: 25px auto;
-        margin-top: 15px;
-    }
-    .texto-sobre-contato{
-        font-size: 15px;
-    }
-    .botaoEnviarMensagem{
-      margin-bottom: 30px;
-      font-size: 13px;
-    }
-   
+.form-group {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+  letter-spacing: 1px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  color: var(--cor-texto);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 2px solid #a6bbcc;
+}
+
+button {
+  display: block;
+  margin: 2rem auto 0;
+  background: none;
+  border: none;
+  color: var(--cor-texto);
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+button::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #a6bbcc;
+  width: 60%;
+  margin: 0.5rem auto 0;
+  transition: width 0.3s;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .titulo-contato h2 {
+    font-size: 25px;
+  }
+
+  .titulo-contato hr {
+    height: 2px;
+    width: 75%;
+    margin: 25px auto;
+    margin-top: 15px;
+  }
+
+  .texto-sobre-contato {
+    font-size: 15px;
+  }
+
+  .botaoEnviarMensagem {
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+
 }

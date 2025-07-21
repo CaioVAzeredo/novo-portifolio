@@ -42,7 +42,7 @@
         {
             "titulo": "APP CARTAS DE CAFÉ",
             "imagem": "../../../assets/cartas-de-cafe.png",
-            "link": "",
+            "link": "/lessence",
             "skills": [
                 "DART/FLUTTER"
             ]

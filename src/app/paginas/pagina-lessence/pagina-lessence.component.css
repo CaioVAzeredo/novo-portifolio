@@ -1,0 +1,42 @@
+.paginas-lessence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+img {
+    width: 1000px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.botao-voltar {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: var(--cor-titulo);
+    margin-top: 20px;
+    width: 80px;
+    border-radius: 5px;
+
+    padding-top: 15px;
+}
+
+.botao-voltar:hover {
+    background-color: var(--cor-titulo);
+    color: var(--cor-fundo);
+}
+
+@media (max-width: 1050px) {
+    .botao-voltar {
+        margin-left: 35px;
+    }
+
+    img {
+        width: 90%;
+    }
+}
