@@ -5,10 +5,16 @@ import { PaginaLessenceComponent } from './paginas/pagina-lessence/pagina-lessen
 export const routes: Routes = [
     {
         path: '',
+        pathMatch: 'full',  // Adicionado para garantir match exato
         component: PrincipalComponent,
     },
     {
         path: 'lessence',
         component: PaginaLessenceComponent,
+    },
+    // Rota para páginas não encontradas (opcional)
+    { 
+        path: '**', 
+        redirectTo: ''  // Redireciona para a página principal
     }
 ];

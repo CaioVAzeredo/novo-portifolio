@@ -3,22 +3,32 @@
         <h2>Contato</h2>
         <hr>
     </div>
-    <p class="texto-sobre-contato">Gostaria de saber sobre seu projeto e como eu posso ajudar. Por favor preencha o formulario, e vou responder de
+    <p class="texto-sobre-contato">Gostaria de saber sobre seu projeto e como eu posso ajudar. Por favor preencha o
+        formulario, e vou responder de
         volta assim que possível</p>
     <form class="form-contato">
         <div class="form-group">
             <label for="nome">NOME</label>
             <input type="text" id="nome" name="nome" required />
+            <div class="mensagem-erro" *ngIf="contatoForm.get('email')?.errors && contatoForm.get('email')?.touched">
+                Campo obrigatório
+            </div>
         </div>
 
         <div class="form-group">
             <label for="email">EMAIL</label>
             <input type="email" id="email" name="email" required />
+            <div class="mensagem-erro" *ngIf="contatoForm.get('email')?.errors && contatoForm.get('email')?.touched">
+                Campo obrigatório
+            </div>
         </div>
 
         <div class="form-group">
             <label for="mensagem">MENSAGEM</label>
             <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <div class="mensagem-erro" *ngIf="contatoForm.get('email')?.errors && contatoForm.get('email')?.touched">
+                Campo obrigatório
+            </div>
         </div>
 
         <button type="submit" class="botaoEnviarMensagem">ENVIAR MENSAGEM</button>
