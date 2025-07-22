@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
+
 
 
 @Component({
   selector: 'app-trabalho',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [HttpClientModule],
   templateUrl: './trabalho.component.html',
   styleUrls: ['./trabalho.component.css']
 })
